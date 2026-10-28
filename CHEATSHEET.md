@@ -8,6 +8,7 @@ Every alias in `git-lga.gitconfig`. Use them as `git <alias>`, or as the shell a
 | ----- | ------- |
 | `ad` | `git add` |
 | `ada` | `git add .` |
+| `adf` | `git add --force` |
 | `adp` | `git add --patch` |
 | `adu` | `git add --update` |
 
@@ -19,8 +20,10 @@ Every alias in `git-lga.gitconfig`. Use them as `git <alias>`, or as the shell a
 | `brd` | `git branch --delete` |
 | `brl` | `git branch --list` |
 | `bra` | `git branch --all` |
+| `brdf` | `git branch --delete --force` |
 | `brf` | `git branch --delete --force` |
 | `brm` | `git branch --move` |
+| `brmf` | `git branch --move --force` |
 | `brs` | `git branch --show-current` |
 
 ## Commit (`cm`)
@@ -40,6 +43,7 @@ Every alias in `git-lga.gitconfig`. Use them as `git <alias>`, or as the shell a
 | `ck` | `git checkout` |
 | `sw` | `git switch` |
 | `swc` | `git switch --create` |
+| `swcf` | `git switch --force-create` |
 | `rs` | `git restore` |
 | `rsa` | `git restore .` |
 | `rss` | `git restore --staged` |
@@ -122,10 +126,13 @@ Every alias in `git-lga.gitconfig`. Use them as `git <alias>`, or as the shell a
 | ----- | ------- |
 | `wt` | `git worktree` |
 | `wta` | `git worktree add` |
+| `wtaf` | `git worktree add --force` |
 | `wtl` | `git worktree list` |
 | `wtm` | `git worktree move` |
+| `wtmf` | `git worktree move --force` |
 | `wtp` | `git worktree prune` |
 | `wtr` | `git worktree remove` |
+| `wtrf` | `git worktree remove --force` |
 
 ## Bisect (`bs`)
 
@@ -175,6 +182,7 @@ Every alias in `git-lga.gitconfig`. Use them as `git <alias>`, or as the shell a
 | `rvc` | `git revert --continue` |
 | `tg` | `git tag` |
 | `tgd` | `git tag --delete` |
+| `tgf` | `git tag --force` |
 | `rst` | `git reset` |
 | `rsth` | `git reset --hard` |
 | `rsts` | `git reset --soft` |

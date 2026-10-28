@@ -96,32 +96,32 @@ echo "source ~/.git-lga.bashrc" >> ~/.bashrc
 
 Every alias follows the same rule: **prefix** (2–3 letters from the command name) + **suffix** (first letter of the key flag).
 
-| Prefix | Command     | Variants                                                                                                     |
-| ------ | ----------- | ------------------------------------------------------------------------------------------------------------ |
-| `ad`   | add         | `ada` all, `adp` patch, `adu` update                                                                         |
-| `br`   | branch      | `bra` all, `brd` delete, `brf` force delete, `brl` list, `brm` move                                          |
-| `cm`   | commit      | `cmm` message, `cma` amend, `cmn` no-edit, `cmf` fixup                                                       |
-| `ck`   | checkout    | —                                                                                                            |
-| `sw`   | switch      | `swc` create                                                                                                 |
-| `rs`   | restore     | `rsa` all, `rss` staged                                                                                      |
-| `df`   | diff        | `dfc` cached, `dfi` ignore-space, `dfs` stat, `dfw` word-diff                                                |
-| `ft`   | fetch       | `fta` all, `ftp` prune                                                                                       |
-| `pl`   | pull        | `plh` HEAD, `plr` rebase                                                                                     |
-| `ps`   | push        | `psf` force, `psh` HEAD, `pshf` HEAD+force, `psu` set-upstream                                               |
-| `lg`   | log         | `lgp` patch, `lgo` oneline graph, `lgh` HEAD                                                                 |
-| `sh`   | show        | —                                                                                                            |
-| `mg`   | merge       | `mga` abort, `mgc` continue, `mgs` squash                                                                    |
-| `rb`   | rebase      | `rba` abort, `rbc` continue, `rbi` interactive, `rbo` onto, `rbs` skip                                       |
-| `sth`  | stash       | `stha` apply, `sthd` drop, `sthl` list, `stho` pop, `sthp` push, `sthc` clear, `sths` show, `sthu` untracked |
-| `st`   | status      | `sts` short                                                                                                  |
-| `chp`  | cherry-pick | `chpa` abort, `chpc` continue, `chps` skip                                                                   |
-| `wt`   | worktree    | `wta` add, `wtl` list, `wtm` move, `wtp` prune, `wtr` remove                                                 |
-| `bs`   | bisect      | `bsb` bad, `bsg` good, `bsr` reset, `bss` start                                                              |
-| `rst`  | reset       | `rsth` hard, `rsts` soft                                                                                     |
-| `rv`   | revert      | `rva` abort, `rvc` continue                                                                                  |
-| `sm`   | submodule   | `smu` update --init --recursive                                                                              |
+| Prefix | Command     | Variants                                                                                                               |
+| ------ | ----------- | ---------------------------------------------------------------------------------------------------------------------- |
+| `ad`   | add         | `ada` all, `adf` force, `adp` patch, `adu` update                                                                      |
+| `br`   | branch      | `bra` all, `brd` delete, `brdf`/`brf` force delete, `brl` list, `brm` move, `brmf` force move                          |
+| `cm`   | commit      | `cmm` message, `cma` amend, `cmn` no-edit, `cmf` fixup                                                                 |
+| `ck`   | checkout    | —                                                                                                                      |
+| `sw`   | switch      | `swc` create, `swcf` force create                                                                                      |
+| `rs`   | restore     | `rsa` all, `rss` staged                                                                                                |
+| `df`   | diff        | `dfc` cached, `dfi` ignore-space, `dfs` stat, `dfw` word-diff                                                          |
+| `ft`   | fetch       | `fta` all, `ftp` prune                                                                                                 |
+| `pl`   | pull        | `plh` HEAD, `plr` rebase                                                                                               |
+| `ps`   | push        | `psf` force, `psh` HEAD, `pshf` HEAD+force, `psu` set-upstream                                                         |
+| `lg`   | log         | `lgp` patch, `lgo` oneline graph, `lgh` HEAD                                                                           |
+| `sh`   | show        | —                                                                                                                      |
+| `mg`   | merge       | `mga` abort, `mgc` continue, `mgs` squash                                                                              |
+| `rb`   | rebase      | `rba` abort, `rbc` continue, `rbi` interactive, `rbo` onto, `rbs` skip                                                 |
+| `sth`  | stash       | `stha` apply, `sthd` drop, `sthl` list, `stho` pop, `sthp` push, `sthc` clear, `sths` show, `sthu` untracked           |
+| `st`   | status      | `sts` short                                                                                                            |
+| `chp`  | cherry-pick | `chpa` abort, `chpc` continue, `chps` skip                                                                             |
+| `wt`   | worktree    | `wta` add, `wtaf` force add, `wtl` list, `wtm` move, `wtmf` force move, `wtp` prune, `wtr` remove, `wtrf` force remove |
+| `bs`   | bisect      | `bsb` bad, `bsg` good, `bsr` reset, `bss` start                                                                        |
+| `rst`  | reset       | `rsth` hard, `rsts` soft                                                                                               |
+| `rv`   | revert      | `rva` abort, `rvc` continue                                                                                            |
+| `sm`   | submodule   | `smu` update --init --recursive                                                                                        |
 
-**Other aliases:** `bl` blame, `cfg` config, `cfgl` config --list, `cln` clean, `clf` clean --force, `clfd` clean --force -d, `clo` clone, `ds` describe, `gp` grep, `in` init, `rl` reflog, `rt` remote, `rtv` remote --verbose, `tg` tag, `tgd` tag --delete, `brs` show-current-branch.
+**Other aliases:** `bl` blame, `cfg` config, `cfgl` config --list, `cln` clean, `clf` clean --force, `clfd` clean --force -d, `clo` clone, `ds` describe, `gp` grep, `in` init, `rl` reflog, `rt` remote, `rtv` remote --verbose, `tg` tag, `tgd` tag --delete, `tgf` tag --force, `brs` show-current-branch.
 
 **Built-in help:** `lga` — show all aliases in a formatted table. Printable version: [CHEATSHEET.md](CHEATSHEET.md).
 

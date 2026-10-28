@@ -16,16 +16,19 @@
     # --- ADD (ad) ---
     ad  = add
     ada = add .
+    adf = add --force
     adp = add --patch
     adu = add --update
 
     # --- BRANCH (br) ---
     br  = branch
     brd = branch --delete
+    brdf = branch --delete --force
     brl = branch --list
     bra = branch --all
     brf = branch --delete --force
     brm = branch --move
+    brmf = branch --move --force
     brs = branch --show-current
 
     # --- COMMIT (cm) ---
@@ -39,6 +42,7 @@
     ck  = checkout
     sw  = switch
     swc = switch --create
+    swcf = switch --force-create
     rs  = restore
     rsa = restore .
     rss = restore --staged
@@ -100,10 +104,13 @@
     # --- WORKTREE (wt) ---
     wt  = worktree
     wta = worktree add
+    wtaf = worktree add --force
     wtl = worktree list
     wtm = worktree move
+    wtmf = worktree move --force
     wtp = worktree prune
     wtr = worktree remove
+    wtrf = worktree remove --force
 
     # --- BISECT (bs) ---
     bs  = bisect
@@ -141,6 +148,7 @@
     rvc  = revert --continue
     tg   = tag
     tgd  = tag --delete
+    tgf  = tag --force
     rst  = reset
     rsth = reset --hard
     rsts = reset --soft
