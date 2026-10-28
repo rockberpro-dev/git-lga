@@ -7,16 +7,19 @@
 # --- ADD ---
 alias gad='git ad'
 alias gada='git ada'
+alias gadf='git adf'
 alias gadp='git adp'
 alias gadu='git adu'
 
 # --- BRANCH ---
 alias gbr='git br'
 alias gbrd='git brd'
+alias gbrdf='git brdf'
 alias gbrl='git brl'
 alias gbra='git bra'
 alias gbrf='git brf'
 alias gbrm='git brm'
+alias gbrmf='git brmf'
 alias gbrs='git brs'
 
 # --- COMMIT ---
@@ -30,6 +33,7 @@ alias gcmm='git cmm'
 alias gck='git ck'
 alias gsw='git sw'
 alias gswc='git swc'
+alias gswcf='git swcf'
 alias grs='git rs'
 alias grsa='git rsa'
 alias grss='git rss'
@@ -91,10 +95,13 @@ alias gsts='git sts'
 # --- WORKTREE ---
 alias gwt='git wt'
 alias gwta='git wta'
+alias gwtaf='git wtaf'
 alias gwtl='git wtl'
 alias gwtm='git wtm'
+alias gwtmf='git wtmf'
 alias gwtp='git wtp'
 alias gwtr='git wtr'
+alias gwtrf='git wtrf'
 
 # --- BISECT ---
 alias gbs='git bs'
@@ -132,6 +139,7 @@ alias grva='git rva'
 alias grvc='git rvc'
 alias gtg='git tg'
 alias gtgd='git tgd'
+alias gtgf='git tgf'
 alias grst='git rst'
 alias grsth='git rsth'
 alias grsts='git rsts'
@@ -171,16 +179,19 @@ if declare -f __git_complete > /dev/null 2>&1; then
     # ADD
     _lga_complete gad  _git_add
     _lga_complete gada _git_add
+    _lga_complete gadf _git_add
     _lga_complete gadp _git_add
     _lga_complete gadu _git_add
 
     # BRANCH
     _lga_complete gbr  _git_branch
     _lga_complete gbrd _git_branch
+    _lga_complete gbrdf _git_branch
     _lga_complete gbrl _git_branch
     _lga_complete gbra _git_branch
     _lga_complete gbrf _git_branch
     _lga_complete gbrm _git_branch
+    _lga_complete gbrmf _git_branch
     _lga_complete gbrs _git_branch
 
     # COMMIT
@@ -194,6 +205,7 @@ if declare -f __git_complete > /dev/null 2>&1; then
     _lga_complete gck  _git_checkout
     _lga_complete gsw  _git_switch
     _lga_complete gswc _git_switch
+    _lga_complete gswcf _git_switch
     _lga_complete grs  _git_restore
     _lga_complete grsa _git_restore
     _lga_complete grss _git_restore
@@ -255,10 +267,13 @@ if declare -f __git_complete > /dev/null 2>&1; then
     # WORKTREE
     _lga_complete gwt  _git_worktree
     _lga_complete gwta _git_worktree
+    _lga_complete gwtaf _git_worktree
     _lga_complete gwtl _git_worktree
     _lga_complete gwtm _git_worktree
+    _lga_complete gwtmf _git_worktree
     _lga_complete gwtp _git_worktree
     _lga_complete gwtr _git_worktree
+    _lga_complete gwtrf _git_worktree
 
     # BISECT
     _lga_complete gbs _git_bisect
@@ -296,6 +311,7 @@ if declare -f __git_complete > /dev/null 2>&1; then
     _lga_complete grvc _git_revert
     _lga_complete gtg  _git_tag
     _lga_complete gtgd _git_tag
+    _lga_complete gtgf _git_tag
     _lga_complete grst _git_reset
     _lga_complete grsth _git_reset
     _lga_complete grsts _git_reset

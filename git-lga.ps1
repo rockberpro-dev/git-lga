@@ -6,16 +6,19 @@
 # --- ADD ---
 function gad  { git ad @args }
 function gada { git ada @args }
+function gadf { git adf @args }
 function gadp { git adp @args }
 function gadu { git adu @args }
 
 # --- BRANCH ---
 function gbr  { git br @args }
 function gbrd { git brd @args }
+function gbrdf { git brdf @args }
 function gbrl { git brl @args }
 function gbra { git bra @args }
 function gbrf { git brf @args }
 function gbrm { git brm @args }
+function gbrmf { git brmf @args }
 function gbrs { git brs @args }
 
 # --- COMMIT ---
@@ -29,6 +32,7 @@ function gcmm { git cmm @args }
 function gck  { git ck @args }
 function gsw  { git sw @args }
 function gswc { git swc @args }
+function gswcf { git swcf @args }
 function grs  { git rs @args }
 function grsa { git rsa @args }
 function grss { git rss @args }
@@ -90,10 +94,13 @@ function gsts { git sts @args }
 # --- WORKTREE ---
 function gwt  { git wt @args }
 function gwta { git wta @args }
+function gwtaf { git wtaf @args }
 function gwtl { git wtl @args }
 function gwtm { git wtm @args }
+function gwtmf { git wtmf @args }
 function gwtp { git wtp @args }
 function gwtr { git wtr @args }
+function gwtrf { git wtrf @args }
 
 # --- BISECT ---
 function gbs   { git bs @args }
@@ -131,6 +138,7 @@ function grva  { git rva @args }
 function grvc  { git rvc @args }
 function gtg   { git tg @args }
 function gtgd  { git tgd @args }
+function gtgf { git tgf @args }
 function grst  { git rst @args }
 function grsth { git rsth @args }
 function grsts { git rsts @args }
@@ -154,20 +162,20 @@ $GitLgaCompleter = {
 }
 
 $GitLgaFns = @(
-    'gad','gada','gadp','gadu',
-    'gbr','gbrd','gbrl','gbra','gbrf','gbrm','gbrs',
+    'gad','gada','gadf','gadp','gadu',
+    'gbr','gbrd','gbrdf','gbrl','gbra','gbrf','gbrm','gbrmf','gbrs',
     'gcm','gcmf','gcma','gcmn','gcmm',
-    'gck','gsw','gswc','grs','grsa','grss',
+    'gck','gsw','gswc','gswcf','grs','grsa','grss',
     'gdf','gdfc','gdfi','gdfw','gdfs',
     'gft','gftp','gfta','gpl','gplh','gplr','gps','gpsf','gpsh','gpshf','gpsu',
     'glg','glgh','glgp','glgo','gsh',
     'gmg','gmga','gmgc','gmgs','grb','grba','grbc','grbi','grbo','grbs',
     'gsth','gsthc','gsthd','gsthl','gstho','gsthp','gstha','gsths','gsthu',
     'gst','gsts',
-    'gwt','gwta','gwtl','gwtm','gwtp','gwtr',
+    'gwt','gwta','gwtaf','gwtl','gwtm','gwtmf','gwtp','gwtr','gwtrf',
     'gbs','gbsb','gbsg','gbsr','gbss','grl','gsm','gsmu',
     'gbl','gcfg','gcfgl','gcln','gclf','gclfd','gclo','gchp','gchpa','gchpc','gchps',
-    'gds','ggp','gin','grt','grtv','grv','grva','grvc','gtg','gtgd','grst','grsth','grsts','glga'
+    'gds','ggp','gin','grt','grtv','grv','grva','grvc','gtg','gtgd','gtgf','grst','grsth','grsts','glga'
 )
 
 Register-ArgumentCompleter -CommandName $GitLgaFns -ScriptBlock $GitLgaCompleter

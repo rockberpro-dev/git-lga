@@ -1,5 +1,11 @@
 # Changelog
 
+## [Unreleased]
+
+### Added
+
+- Force variants: `brdf` branch --delete --force, `brmf` branch --move --force, `wtmf` worktree move --force, `wtrf` worktree remove --force, `wtaf` worktree add --force, `swcf` switch --force-create, `tgf` tag --force, `adf` add --force (plus `g`-prefixed shell aliases with completion)
+
 ## [0.2.0] - 2026-10-01
 
 ### Added
