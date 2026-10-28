@@ -6,6 +6,10 @@
 
 - Force variants: `brdf` branch --delete --force, `brmf` branch --move --force, `wtmf` worktree move --force, `wtrf` worktree remove --force, `wtaf` worktree add --force, `swcf` switch --force-create, `tgf` tag --force, `adf` add --force (plus `g`-prefixed shell aliases with completion)
 
+### Changed
+
+- Files now install to `~/.config/git-lga/` (or `$XDG_CONFIG_HOME/git-lga/`) instead of directly in `~/`. Re-running the setup script migrates an older install: it removes `~/.git-lga.gitconfig`, `~/.git-lga-help.sh`, `~/.git-lga.bashrc`/`~/.git-lga.ps1`, the old `include.path` entry and the old source line in `~/.bashrc`/`$PROFILE`
+
 ## [0.2.0] - 2026-10-01
 
 ### Added

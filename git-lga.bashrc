@@ -1,7 +1,7 @@
 # ==============================================================================
 # LGA — Bash shell aliases (g-prefix)
 # Source this file from ~/.bashrc:
-#   echo "source ~/path/to/git-lga.bashrc" >> ~/.bashrc
+#   echo "source ~/.config/git-lga/git-lga.bashrc" >> ~/.bashrc
 # ==============================================================================
 
 # --- ADD ---

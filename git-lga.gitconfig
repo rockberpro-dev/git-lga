@@ -9,7 +9,7 @@
 #   curl -sL https://raw.githubusercontent.com/rockberpro/git-lga/main/setup.sh | bash
 #
 # Manual install:
-#   git config --global include.path ~/.git-lga.gitconfig
+#   git config --global include.path ~/.config/git-lga/git-lga.gitconfig
 # ==============================================================================
 
 [alias]
@@ -152,4 +152,4 @@
     rst  = reset
     rsth = reset --hard
     rsts = reset --soft
-    lga  = !~/.git-lga-help.sh
+    lga  = !\"${XDG_CONFIG_HOME:-$HOME/.config}/git-lga/git-lga-help.sh\"
