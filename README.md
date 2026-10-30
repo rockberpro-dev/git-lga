@@ -20,25 +20,9 @@ curl -sL https://raw.githubusercontent.com/rockberpro-dev/git-lga/main/setup.sh 
 irm https://raw.githubusercontent.com/rockberpro-dev/git-lga/main/setup.ps1 | iex
 ```
 
-The setup script adds an `[include]` entry to `~/.gitconfig`, installs shell aliases (g-prefix), and copies files to `~/.config/git-lga/` (or `$XDG_CONFIG_HOME/git-lga/`). Re-running it upgrades an older install that put the files directly in `~/`: the old files, include and source line are removed. You can read the full source ([setup.sh](setup.sh), [setup.ps1](setup.ps1)) before running it, or use the manual install below.
+The script copies the files to `~/.config/git-lga/` and adds an `[include]` entry to `~/.gitconfig`. Your own config stays untouched.
 
-**Manual install:**
-
-```bash
-mkdir -p ~/.config/git-lga
-
-curl -sL https://raw.githubusercontent.com/rockberpro-dev/git-lga/main/git-lga.gitconfig \
-  -o ~/.config/git-lga/git-lga.gitconfig
-
-curl -sL https://raw.githubusercontent.com/rockberpro-dev/git-lga/main/git-lga-help.sh \
-  -o ~/.config/git-lga/git-lga-help.sh && chmod +x ~/.config/git-lga/git-lga-help.sh
-
-curl -sL https://raw.githubusercontent.com/rockberpro-dev/git-lga/main/git-lga.bashrc \
-  -o ~/.config/git-lga/git-lga.bashrc
-
-git config --global --add include.path ~/.config/git-lga/git-lga.gitconfig
-echo "source ~/.config/git-lga/git-lga.bashrc" >> ~/.bashrc
-```
+Manual install, upgrade and uninstall: [GUIDE.md](GUIDE.md).
 
 ## How It Reads
 
@@ -139,14 +123,6 @@ There are hundreds of git alias collections. Here's what makes this one differen
 - **Non-invasive.** Installs as a gitconfig `[include]` — your existing config stays untouched. Remove it with one line.
 - **No dependencies.** Pure gitconfig + one shell script. No plugin managers, no frameworks, no oh-my-zsh required.
 
-## Uninstall
-
-```bash
-git config --global --unset-all include.path '/git-lga/git-lga\.gitconfig$'
-rm -r ~/.config/git-lga
-# remove source line from ~/.bashrc manually
-```
-
 ---
 
-[setup.sh](setup.sh) · [setup.ps1](setup.ps1) · [git-lga.gitconfig](git-lga.gitconfig) · [git-lga-help.sh](git-lga-help.sh) · [git-lga.bashrc](git-lga.bashrc) · [git-lga.ps1](git-lga.ps1)
+[GUIDE.md](GUIDE.md) · [CHEATSHEET.md](CHEATSHEET.md) · [CHANGELOG.md](CHANGELOG.md)
