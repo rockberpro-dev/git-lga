@@ -4,13 +4,13 @@ set -e
 
 CONFIG_DIR="${XDG_CONFIG_HOME:-$HOME/.config}/git-lga"
 
-GITCONFIG_URL="https://raw.githubusercontent.com/rockberpro/git-lga/main/git-lga.gitconfig"
+GITCONFIG_URL="https://raw.githubusercontent.com/rockberpro-dev/git-lga/main/git-lga.gitconfig"
 INSTALL_PATH="$CONFIG_DIR/git-lga.gitconfig"
 
-HELP_URL="https://raw.githubusercontent.com/rockberpro/git-lga/main/git-lga-help.sh"
+HELP_URL="https://raw.githubusercontent.com/rockberpro-dev/git-lga/main/git-lga-help.sh"
 HELP_PATH="$CONFIG_DIR/git-lga-help.sh"
 
-BASHRC_URL="https://raw.githubusercontent.com/rockberpro/git-lga/main/git-lga.bashrc"
+BASHRC_URL="https://raw.githubusercontent.com/rockberpro-dev/git-lga/main/git-lga.bashrc"
 BASHRC_PATH="$CONFIG_DIR/git-lga.bashrc"
 
 # Remove files from older versions, which installed directly into ~

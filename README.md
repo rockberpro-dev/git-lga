@@ -6,6 +6,26 @@
 
 <p align="center">A prefix-based shorthand system that turns Git commands into muscle memory.</p>
 
+## Install
+
+**Linux / macOS:**
+
+```bash
+curl -sL https://raw.githubusercontent.com/rockberpro-dev/git-lga/main/setup.sh | bash
+```
+
+**Windows (PowerShell):**
+
+```powershell
+irm https://raw.githubusercontent.com/rockberpro-dev/git-lga/main/setup.ps1 | iex
+```
+
+The script copies the files to `~/.config/git-lga/` and adds an `[include]` entry to `~/.gitconfig`. Your own config stays untouched.
+
+Manual install, upgrade and uninstall: [GUIDE.md](GUIDE.md).
+
+## How It Reads
+
 Two-letter **prefix** picks the command. One-letter **suffix** is the first letter of the flag.
 
 ```
@@ -60,40 +80,6 @@ Run `git lga` to see every alias right in your terminal:
   103 aliases across 14 groups
 ```
 
-## Install
-
-**Linux / macOS:**
-
-```bash
-curl -sL https://raw.githubusercontent.com/rockberpro/git-lga/main/setup.sh | bash
-```
-
-**Windows (PowerShell):**
-
-```powershell
-irm https://raw.githubusercontent.com/rockberpro/git-lga/main/setup.ps1 | iex
-```
-
-The setup script adds an `[include]` entry to `~/.gitconfig`, installs shell aliases (g-prefix), and copies files to `~/.config/git-lga/` (or `$XDG_CONFIG_HOME/git-lga/`). Re-running it upgrades an older install that put the files directly in `~/`: the old files, include and source line are removed. You can read the full source ([setup.sh](setup.sh), [setup.ps1](setup.ps1)) before running it, or use the manual install below.
-
-**Manual install:**
-
-```bash
-mkdir -p ~/.config/git-lga
-
-curl -sL https://raw.githubusercontent.com/rockberpro/git-lga/main/git-lga.gitconfig \
-  -o ~/.config/git-lga/git-lga.gitconfig
-
-curl -sL https://raw.githubusercontent.com/rockberpro/git-lga/main/git-lga-help.sh \
-  -o ~/.config/git-lga/git-lga-help.sh && chmod +x ~/.config/git-lga/git-lga-help.sh
-
-curl -sL https://raw.githubusercontent.com/rockberpro/git-lga/main/git-lga.bashrc \
-  -o ~/.config/git-lga/git-lga.bashrc
-
-git config --global --add include.path ~/.config/git-lga/git-lga.gitconfig
-echo "source ~/.config/git-lga/git-lga.bashrc" >> ~/.bashrc
-```
-
 ## The Pattern
 
 Every alias follows the same rule: **prefix** (2–3 letters from the command name) + **suffix** (first letter of the key flag).
@@ -137,14 +123,6 @@ There are hundreds of git alias collections. Here's what makes this one differen
 - **Non-invasive.** Installs as a gitconfig `[include]` — your existing config stays untouched. Remove it with one line.
 - **No dependencies.** Pure gitconfig + one shell script. No plugin managers, no frameworks, no oh-my-zsh required.
 
-## Uninstall
-
-```bash
-git config --global --unset-all include.path '/git-lga/git-lga\.gitconfig$'
-rm -r ~/.config/git-lga
-# remove source line from ~/.bashrc manually
-```
-
 ---
 
-[setup.sh](setup.sh) · [setup.ps1](setup.ps1) · [git-lga.gitconfig](git-lga.gitconfig) · [git-lga-help.sh](git-lga-help.sh) · [git-lga.bashrc](git-lga.bashrc) · [git-lga.ps1](git-lga.ps1)
+[GUIDE.md](GUIDE.md) · [CHEATSHEET.md](CHEATSHEET.md) · [CHANGELOG.md](CHANGELOG.md)
