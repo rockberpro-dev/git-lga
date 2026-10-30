@@ -12,6 +12,16 @@ Every alias in `git-lga.gitconfig`. Use them as `git <alias>`, or as the shell a
 | `adp` | `git add --patch` |
 | `adu` | `git add --update` |
 
+## Remove (`rm`)
+
+`git rm` is a built-in command, so it has no alias. Use `git rm` or the shell alias `grm`.
+
+| Alias | Command |
+| ----- | ------- |
+| `rmc` | `git rm --cached` |
+| `rmf` | `git rm --force` |
+| `rmr` | `git rm -r` |
+
 ## Branch (`br`)
 
 | Alias | Command |

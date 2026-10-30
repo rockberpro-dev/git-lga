@@ -20,6 +20,12 @@
     adp = add --patch
     adu = add --update
 
+    # --- REMOVE (rm) ---
+    # No `rm` alias: git ignores an alias that has the name of a built-in command.
+    rmc = rm --cached
+    rmf = rm --force
+    rmr = rm -r
+
     # --- BRANCH (br) ---
     br  = branch
     brd = branch --delete
