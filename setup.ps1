@@ -3,13 +3,13 @@ $ErrorActionPreference = "Stop"
 $ConfigHome = if ($env:XDG_CONFIG_HOME) { $env:XDG_CONFIG_HOME } else { "$HOME\.config" }
 $ConfigDir = "$ConfigHome\git-lga"
 
-$GitconfigUrl = "https://raw.githubusercontent.com/rockberpro/git-lga/main/git-lga.gitconfig"
+$GitconfigUrl = "https://raw.githubusercontent.com/rockberpro-dev/git-lga/main/git-lga.gitconfig"
 $InstallPath = "$ConfigDir\git-lga.gitconfig"
 
-$HelpUrl = "https://raw.githubusercontent.com/rockberpro/git-lga/main/git-lga-help.sh"
+$HelpUrl = "https://raw.githubusercontent.com/rockberpro-dev/git-lga/main/git-lga-help.sh"
 $HelpPath = "$ConfigDir\git-lga-help.sh"
 
-$Ps1Url = "https://raw.githubusercontent.com/rockberpro/git-lga/main/git-lga.ps1"
+$Ps1Url = "https://raw.githubusercontent.com/rockberpro-dev/git-lga/main/git-lga.ps1"
 $Ps1Path = "$ConfigDir\git-lga.ps1"
 
 # Remove files from older versions, which installed directly into ~
