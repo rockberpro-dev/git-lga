@@ -10,6 +10,12 @@ function gadf { git adf @args }
 function gadp { git adp @args }
 function gadu { git adu @args }
 
+# --- REMOVE ---
+function grm  { git rm @args }
+function grmc { git rmc @args }
+function grmf { git rmf @args }
+function grmr { git rmr @args }
+
 # --- BRANCH ---
 function gbr  { git br @args }
 function gbrd { git brd @args }
@@ -163,6 +169,7 @@ $GitLgaCompleter = {
 
 $GitLgaFns = @(
     'gad','gada','gadf','gadp','gadu',
+    'grm','grmc','grmf','grmr',
     'gbr','gbrd','gbrdf','gbrl','gbra','gbrf','gbrm','gbrmf','gbrs',
     'gcm','gcmf','gcma','gcmn','gcmm',
     'gck','gsw','gswc','gswcf','grs','grsa','grss',

@@ -101,6 +101,7 @@ Every alias follows the same rule: **prefix** (2–3 letters from the command na
 | Prefix | Command     | Variants                                                                                                               |
 | ------ | ----------- | ---------------------------------------------------------------------------------------------------------------------- |
 | `ad`   | add         | `ada` all, `adf` force, `adp` patch, `adu` update                                                                      |
+| `rm`   | remove      | `rmc` cached, `rmf` force, `rmr` recursive                                                                             |
 | `br`   | branch      | `bra` all, `brd` delete, `brdf`/`brf` force delete, `brl` list, `brm` move, `brmf` force move                          |
 | `cm`   | commit      | `cmm` message, `cma` amend, `cmn` no-edit, `cmf` fixup                                                                 |
 | `ck`   | checkout    | —                                                                                                                      |

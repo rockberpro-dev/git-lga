@@ -4,6 +4,7 @@
 
 ### Added
 
+- Remove aliases: `rmc` rm --cached, `rmf` rm --force, `rmr` rm -r (plus `g`-prefixed shell aliases with completion, and `grm` for the built-in `git rm`)
 - Force variants: `brdf` branch --delete --force, `brmf` branch --move --force, `wtmf` worktree move --force, `wtrf` worktree remove --force, `wtaf` worktree add --force, `swcf` switch --force-create, `tgf` tag --force, `adf` add --force (plus `g`-prefixed shell aliases with completion)
 
 ### Changed

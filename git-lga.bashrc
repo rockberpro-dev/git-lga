@@ -11,6 +11,12 @@ alias gadf='git adf'
 alias gadp='git adp'
 alias gadu='git adu'
 
+# --- REMOVE ---
+alias grm='git rm'
+alias grmc='git rmc'
+alias grmf='git rmf'
+alias grmr='git rmr'
+
 # --- BRANCH ---
 alias gbr='git br'
 alias gbrd='git brd'
@@ -182,6 +188,12 @@ if declare -f __git_complete > /dev/null 2>&1; then
     _lga_complete gadf _git_add
     _lga_complete gadp _git_add
     _lga_complete gadu _git_add
+
+    # REMOVE
+    _lga_complete grm  _git_rm
+    _lga_complete grmc _git_rm
+    _lga_complete grmf _git_rm
+    _lga_complete grmr _git_rm
 
     # BRANCH
     _lga_complete gbr  _git_branch
