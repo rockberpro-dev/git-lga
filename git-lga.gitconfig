@@ -155,6 +155,7 @@
     tg   = tag
     tgd  = tag --delete
     tgf  = tag --force
+    tgl  = tag --list
     rst  = reset
     rsth = reset --hard
     rsts = reset --soft

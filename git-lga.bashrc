@@ -146,6 +146,7 @@ alias grvc='git rvc'
 alias gtg='git tg'
 alias gtgd='git tgd'
 alias gtgf='git tgf'
+alias gtgl='git tgl'
 alias grst='git rst'
 alias grsth='git rsth'
 alias grsts='git rsts'
@@ -324,6 +325,7 @@ if declare -f __git_complete > /dev/null 2>&1; then
     _lga_complete gtg  _git_tag
     _lga_complete gtgd _git_tag
     _lga_complete gtgf _git_tag
+    _lga_complete gtgl _git_tag
     _lga_complete grst _git_reset
     _lga_complete grsth _git_reset
     _lga_complete grsts _git_reset
