@@ -149,7 +149,7 @@ alias gtgf='git tgf'
 alias grst='git rst'
 alias grsth='git rsth'
 alias grsts='git rsts'
-alias glga='git lga'
+alias lga='git lga'
 
 # ==============================================================================
 # Bash completion for aliases above

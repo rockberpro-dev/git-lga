@@ -148,7 +148,7 @@ function gtgf { git tgf @args }
 function grst  { git rst @args }
 function grsth { git rsth @args }
 function grsts { git rsts @args }
-function glga  { git lga @args }
+function lga   { git lga @args }
 
 # ==============================================================================
 # PowerShell completion for the functions above (requires posh-git)
@@ -182,7 +182,7 @@ $GitLgaFns = @(
     'gwt','gwta','gwtaf','gwtl','gwtm','gwtmf','gwtp','gwtr','gwtrf',
     'gbs','gbsb','gbsg','gbsr','gbss','grl','gsm','gsmu',
     'gbl','gcfg','gcfgl','gcln','gclf','gclfd','gclo','gchp','gchpa','gchpc','gchps',
-    'gds','ggp','gin','grt','grtv','grv','grva','grvc','gtg','gtgd','gtgf','grst','grsth','grsts','glga'
+    'gds','ggp','gin','grt','grtv','grv','grva','grvc','gtg','gtgd','gtgf','grst','grsth','grsts'
 )
 
 Register-ArgumentCompleter -CommandName $GitLgaFns -ScriptBlock $GitLgaCompleter
