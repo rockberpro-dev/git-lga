@@ -145,6 +145,7 @@ function grvc  { git rvc @args }
 function gtg   { git tg @args }
 function gtgd  { git tgd @args }
 function gtgf { git tgf @args }
+function gtgl  { git tgl @args }
 function grst  { git rst @args }
 function grsth { git rsth @args }
 function grsts { git rsts @args }
@@ -182,7 +183,7 @@ $GitLgaFns = @(
     'gwt','gwta','gwtaf','gwtl','gwtm','gwtmf','gwtp','gwtr','gwtrf',
     'gbs','gbsb','gbsg','gbsr','gbss','grl','gsm','gsmu',
     'gbl','gcfg','gcfgl','gcln','gclf','gclfd','gclo','gchp','gchpa','gchpc','gchps',
-    'gds','ggp','gin','grt','grtv','grv','grva','grvc','gtg','gtgd','gtgf','grst','grsth','grsts'
+    'gds','ggp','gin','grt','grtv','grv','grva','grvc','gtg','gtgd','gtgf','gtgl','grst','grsth','grsts'
 )
 
 Register-ArgumentCompleter -CommandName $GitLgaFns -ScriptBlock $GitLgaCompleter

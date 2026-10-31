@@ -110,7 +110,7 @@ Every alias follows the same rule: **prefix** (2–3 letters from the command na
 | `rv`   | revert      | `rva` abort, `rvc` continue                                                                                            |
 | `sm`   | submodule   | `smu` update --init --recursive                                                                                        |
 
-**Other aliases:** `bl` blame, `cfg` config, `cfgl` config --list, `cln` clean, `clf` clean --force, `clfd` clean --force -d, `clo` clone, `ds` describe, `gp` grep, `in` init, `rl` reflog, `rt` remote, `rtv` remote --verbose, `tg` tag, `tgd` tag --delete, `tgf` tag --force, `brs` show-current-branch.
+**Other aliases:** `bl` blame, `cfg` config, `cfgl` config --list, `cln` clean, `clf` clean --force, `clfd` clean --force -d, `clo` clone, `ds` describe, `gp` grep, `in` init, `rl` reflog, `rt` remote, `rtv` remote --verbose, `tg` tag, `tgd` tag --delete, `tgf` tag --force, `tgl` tag --list, `brs` show-current-branch.
 
 **Built-in help:** `lga` — show all aliases in a formatted table. Printable version: [CHEATSHEET.md](CHEATSHEET.md).
 

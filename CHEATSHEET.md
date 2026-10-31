@@ -193,6 +193,7 @@ Every alias in `git-lga.gitconfig`. Use them as `git <alias>`, or as the shell a
 | `tg` | `git tag` |
 | `tgd` | `git tag --delete` |
 | `tgf` | `git tag --force` |
+| `tgl` | `git tag --list` |
 | `rst` | `git reset` |
 | `rsth` | `git reset --hard` |
 | `rsts` | `git reset --soft` |
