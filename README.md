@@ -98,7 +98,7 @@ Every alias follows the same rule: **prefix** (2–3 letters from the command na
 | `pl`   | pull        | `plh` HEAD, `plr` rebase                                                                                               |
 | `ps`   | push        | `psf` force, `psh` HEAD, `pshf` HEAD+force, `psu` set-upstream                                                         |
 | `lg`   | log         | `lgp` patch, `lgo` oneline graph, `lgh` HEAD                                                                           |
-| `sh`   | show        | —                                                                                                                      |
+| `sh`   | show        | `shn` name-only                                                                                                        |
 | `mg`   | merge       | `mga` abort, `mgc` continue, `mgs` squash                                                                              |
 | `rb`   | rebase      | `rba` abort, `rbc` continue, `rbi` interactive, `rbo` onto, `rbs` skip                                                 |
 | `sth`  | stash       | `stha` apply, `sthd` drop, `sthl` list, `stho` pop, `sthp` push, `sthc` clear, `sths` show, `sthu` untracked           |

@@ -69,6 +69,7 @@ function glgh { git lgh @args }
 function glgp { git lgp @args }
 function glgo { git lgo @args }
 function gsh  { git sh @args }
+function gshn { git shn @args }
 
 # --- MERGE / REBASE ---
 function gmg  { git mg @args }
@@ -176,7 +177,7 @@ $GitLgaFns = @(
     'gck','gsw','gswc','gswcf','grs','grsa','grss',
     'gdf','gdfc','gdfi','gdfw','gdfs',
     'gft','gftp','gfta','gpl','gplh','gplr','gps','gpsf','gpsh','gpshf','gpsu',
-    'glg','glgh','glgp','glgo','gsh',
+    'glg','glgh','glgp','glgo','gsh','gshn',
     'gmg','gmga','gmgc','gmgs','grb','grba','grbc','grbi','grbo','grbs',
     'gsth','gsthc','gsthd','gsthl','gstho','gsthp','gstha','gsths','gsthu',
     'gst','gsts',

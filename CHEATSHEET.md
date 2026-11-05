@@ -93,6 +93,7 @@ Every alias in `git-lga.gitconfig`. Use them as `git <alias>`, or as the shell a
 | `lgp` | `git log --patch` |
 | `lgo` | `git log --graph --oneline --decorate --all` |
 | `sh` | `git show --patch` |
+| `shn` | `git show --name-only` |
 
 ## Merge / Rebase
 

@@ -79,6 +79,7 @@
     lgp = log --patch
     lgo = log --graph --oneline --decorate --all
     sh  = show --patch
+    shn = show --name-only
 
     # --- MERGE / REBASE ---
     mg  = merge

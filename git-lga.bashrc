@@ -70,6 +70,7 @@ alias glgh='git lgh'
 alias glgp='git lgp'
 alias glgo='git lgo'
 alias gsh='git sh'
+alias gshn='git shn'
 
 # --- MERGE / REBASE ---
 alias gmg='git mg'
@@ -249,6 +250,7 @@ if declare -f __git_complete > /dev/null 2>&1; then
     _lga_complete glgp _git_log
     _lga_complete glgo _git_log
     _lga_complete gsh  _git_show
+    _lga_complete gshn _git_show
 
     # MERGE / REBASE
     _lga_complete gmg  _git_merge
