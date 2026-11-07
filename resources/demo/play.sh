@@ -19,7 +19,7 @@ type_text() {
     printf '%s' "$color"
     for ((i = 0; i < ${#text}; i++)); do
         printf '%s' "${text:i:1}"
-        sleep 0.04
+        sleep 0.07
     done
     printf '%s' "$RESET"
 }
