@@ -1,0 +1,6 @@
+gswc feature/login              # git switch --create feature/login
+gst                             # git status
+gad src/login.ts                # git add src/login.ts
+gcmm "Add login screen"         # git commit --message "..."
+gpsh                            # git push origin HEAD
+clear
