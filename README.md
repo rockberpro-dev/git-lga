@@ -6,6 +6,10 @@
 
 <p align="center">A prefix-based shorthand system that turns Git commands into muscle memory.</p>
 
+<p align="center">
+  <img src="resources/img/demo.svg" alt="git-lga demo" width="700">
+</p>
+
 ## Install
 
 **Linux / macOS:**
